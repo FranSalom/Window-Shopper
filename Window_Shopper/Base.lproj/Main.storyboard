@@ -17,9 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="windowShopperBG" translatesAutoresizingMaskIntoConstraints="NO" id="8NN-sR-DKe">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperBG" translatesAutoresizingMaskIntoConstraints="NO" id="8NN-sR-DKe">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperIcon" translatesAutoresizingMaskIntoConstraints="NO" id="kTD-FJ-ueg">
                                 <rect key="frame" x="137.5" y="20" width="100" height="100"/>
@@ -37,7 +36,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your hourly wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yed-z7-YbM" customClass="TextFieldView" customModule="Window_Shopper" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yed-z7-YbM" customClass="TextFieldView" customModule="Window_Shopper" customModuleProvider="target">
                                 <rect key="frame" x="60" y="240" width="255" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="gT3-dV-iTi"/>
@@ -52,16 +51,24 @@
                             <constraint firstItem="yed-z7-YbM" firstAttribute="height" secondItem="5qD-9p-eqQ" secondAttribute="height" id="CzI-AI-qVB"/>
                             <constraint firstItem="yed-z7-YbM" firstAttribute="leading" secondItem="5qD-9p-eqQ" secondAttribute="leading" id="DK5-lf-vuZ"/>
                             <constraint firstItem="yed-z7-YbM" firstAttribute="width" secondItem="5qD-9p-eqQ" secondAttribute="width" id="aIZ-nI-mCu"/>
+                            <constraint firstItem="8NN-sR-DKe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="c8T-YS-uSE"/>
                             <constraint firstItem="5qD-9p-eqQ" firstAttribute="top" secondItem="kTD-FJ-ueg" secondAttribute="bottom" constant="45" id="fb3-yC-aGr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5qD-9p-eqQ" secondAttribute="trailing" constant="60" id="ks8-3N-O9F"/>
                             <constraint firstItem="kTD-FJ-ueg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lfe-GK-lYO"/>
+                            <constraint firstItem="8NN-sR-DKe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pqC-zR-evU"/>
+                            <constraint firstItem="8NN-sR-DKe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qrG-ur-fpk"/>
                             <constraint firstItem="yed-z7-YbM" firstAttribute="top" secondItem="5qD-9p-eqQ" secondAttribute="bottom" constant="35" id="qvU-wK-9RW"/>
                             <constraint firstItem="kTD-FJ-ueg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rDW-4C-A6m"/>
+                            <constraint firstItem="8NN-sR-DKe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u7B-R7-sgg"/>
                             <constraint firstItem="yed-z7-YbM" firstAttribute="trailing" secondItem="5qD-9p-eqQ" secondAttribute="trailing" id="uhO-hc-r2w"/>
                             <constraint firstItem="5qD-9p-eqQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="utW-wU-qKF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hourtxt" destination="5qD-9p-eqQ" id="x9z-qa-eub"/>
+                        <outlet property="itemtxt" destination="yed-z7-YbM" id="Nfl-n7-ejb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

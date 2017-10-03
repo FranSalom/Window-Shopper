@@ -18,7 +18,9 @@ class MainVC: UIViewController {
     
     let calcBtn = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 60))
         
-        calcBtn.backgroundColor = #colorLiteral(red: 0.84812361, green: 0.2746934295, blue: 0.1194182709, alpha: 1)
+        calcBtn.backgroundColor = #colorLiteral(red: 0.8981315415, green: 0.2922721798, blue: 0.1312183711, alpha: 1)
+        calcBtn.layer.borderWidth = 3.0
+        calcBtn.layer.borderColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         calcBtn.setTitle("Calculate", for: .normal)
         calcBtn.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .normal)
         calcBtn.addTarget(self, action: #selector(MainVC.calculateHours), for: .touchUpInside)

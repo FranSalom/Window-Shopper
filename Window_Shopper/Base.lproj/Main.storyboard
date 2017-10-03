@@ -28,22 +28,36 @@
                                     <constraint firstAttribute="height" constant="100" id="9cN-eV-8qd"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5qD-9p-eqQ">
-                                <rect key="frame" x="60" y="165" width="255" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your hourly wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5qD-9p-eqQ" customClass="TextFieldView" customModule="Window_Shopper" customModuleProvider="target">
+                                <rect key="frame" x="60" y="165" width="255" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="QiF-rt-cdi"/>
+                                    <constraint firstAttribute="height" constant="40" id="QiF-rt-cdi"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your hourly wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yed-z7-YbM" customClass="TextFieldView" customModule="Window_Shopper" customModuleProvider="target">
+                                <rect key="frame" x="60" y="240" width="255" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gT3-dV-iTi"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="yed-z7-YbM" firstAttribute="height" secondItem="5qD-9p-eqQ" secondAttribute="height" id="CzI-AI-qVB"/>
+                            <constraint firstItem="yed-z7-YbM" firstAttribute="leading" secondItem="5qD-9p-eqQ" secondAttribute="leading" id="DK5-lf-vuZ"/>
+                            <constraint firstItem="yed-z7-YbM" firstAttribute="width" secondItem="5qD-9p-eqQ" secondAttribute="width" id="aIZ-nI-mCu"/>
                             <constraint firstItem="5qD-9p-eqQ" firstAttribute="top" secondItem="kTD-FJ-ueg" secondAttribute="bottom" constant="45" id="fb3-yC-aGr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5qD-9p-eqQ" secondAttribute="trailing" constant="60" id="ks8-3N-O9F"/>
                             <constraint firstItem="kTD-FJ-ueg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lfe-GK-lYO"/>
+                            <constraint firstItem="yed-z7-YbM" firstAttribute="top" secondItem="5qD-9p-eqQ" secondAttribute="bottom" constant="35" id="qvU-wK-9RW"/>
                             <constraint firstItem="kTD-FJ-ueg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rDW-4C-A6m"/>
+                            <constraint firstItem="yed-z7-YbM" firstAttribute="trailing" secondItem="5qD-9p-eqQ" secondAttribute="trailing" id="uhO-hc-r2w"/>
                             <constraint firstItem="5qD-9p-eqQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="utW-wU-qKF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

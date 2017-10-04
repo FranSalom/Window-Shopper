@@ -25,7 +25,7 @@ class Window_ShopperTests: XCTestCase {
     }
     
     func testHourly(){
-        XCTAssert(wage.getHours(forWage: 15.50, forPrice: 250.53) == 17)
+        XCTAssert(Wage.getHours(forWage: 15.50, forPrice: 250.53) == 17)
     }
     
     func testPerformanceExample() {

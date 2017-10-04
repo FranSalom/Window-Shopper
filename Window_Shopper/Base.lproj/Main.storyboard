@@ -21,14 +21,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperIcon" translatesAutoresizingMaskIntoConstraints="NO" id="kTD-FJ-ueg">
-                                <rect key="frame" x="137.5" y="20" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="28" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="9bq-fo-h65"/>
                                     <constraint firstAttribute="height" constant="100" id="9cN-eV-8qd"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Cuanto ganas por hora?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5qD-9p-eqQ" customClass="TextFieldView" customModule="Window_Shopper" customModuleProvider="target">
-                                <rect key="frame" x="60" y="165" width="255" height="40"/>
+                                <rect key="frame" x="60" y="168" width="255" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="QiF-rt-cdi"/>
                                 </constraints>
@@ -37,7 +37,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Precio del articulo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yed-z7-YbM" customClass="TextFieldView" customModule="Window_Shopper" customModuleProvider="target">
-                                <rect key="frame" x="60" y="240" width="255" height="40"/>
+                                <rect key="frame" x="60" y="243" width="255" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="gT3-dV-iTi"/>
                                 </constraints>
@@ -46,7 +46,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHu-8k-dwL">
-                                <rect key="frame" x="60" y="320" width="255" height="50"/>
+                                <rect key="frame" x="60" y="323" width="255" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="6Gf-eE-e40"/>
                                 </constraints>
@@ -54,8 +54,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSn-to-WUW">
-                                <rect key="frame" x="164.5" y="378" width="46" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSn-to-WUW">
+                                <rect key="frame" x="164.5" y="381" width="46" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="6cr-iJ-bXk"/>
                                 </constraints>
@@ -70,7 +70,7 @@
                                 </constraints>
                                 <state key="normal" title="Clear Calculator"/>
                                 <connections>
-                                    <action selector="clearBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iph-Wm-Jiy"/>
+                                    <action selector="clearBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RFn-ZA-aha"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -85,7 +85,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VSo-4d-PDB" secondAttribute="bottom" constant="20" id="bb2-2u-PP8"/>
                             <constraint firstItem="8NN-sR-DKe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="c8T-YS-uSE"/>
                             <constraint firstItem="VSo-4d-PDB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eoj-hz-XMt"/>
-                            <constraint firstItem="5qD-9p-eqQ" firstAttribute="top" secondItem="kTD-FJ-ueg" secondAttribute="bottom" constant="45" id="fb3-yC-aGr"/>
+                            <constraint firstItem="5qD-9p-eqQ" firstAttribute="top" secondItem="kTD-FJ-ueg" secondAttribute="bottom" constant="40" id="fb3-yC-aGr"/>
                             <constraint firstItem="SSn-to-WUW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hpR-Rl-hef"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VSo-4d-PDB" secondAttribute="trailing" constant="16" id="jX4-Vb-aN0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5qD-9p-eqQ" secondAttribute="trailing" constant="60" id="ks8-3N-O9F"/>
@@ -93,7 +93,7 @@
                             <constraint firstItem="8NN-sR-DKe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pqC-zR-evU"/>
                             <constraint firstItem="8NN-sR-DKe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qrG-ur-fpk"/>
                             <constraint firstItem="yed-z7-YbM" firstAttribute="top" secondItem="5qD-9p-eqQ" secondAttribute="bottom" constant="35" id="qvU-wK-9RW"/>
-                            <constraint firstItem="kTD-FJ-ueg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rDW-4C-A6m"/>
+                            <constraint firstItem="kTD-FJ-ueg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="rDW-4C-A6m"/>
                             <constraint firstItem="JHu-8k-dwL" firstAttribute="width" secondItem="yed-z7-YbM" secondAttribute="width" id="tLQ-If-38W"/>
                             <constraint firstItem="8NN-sR-DKe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u7B-R7-sgg"/>
                             <constraint firstItem="yed-z7-YbM" firstAttribute="trailing" secondItem="5qD-9p-eqQ" secondAttribute="trailing" id="uhO-hc-r2w"/>

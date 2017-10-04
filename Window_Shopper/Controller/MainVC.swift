@@ -31,11 +31,27 @@ class MainVC: UIViewController {
         itemtxt.inputAccessoryView = calcBtn
         hoursLbl.isHidden = true
         secondHourslbl.isHidden = true
+        calcBtn.addTarget(self, action: #selector(MainVC.calculateHours), for: .touchUpInside)
     }
     
     @objc func calculateHours(){
-        
+        if let wageTxt = hourtxt.text, let priceTxt = itemtxt.text{
+            if let wage = Double(wageTxt), let price = Double(priceTxt){
+                view.endEditing(true)
+                hoursLbl.isHidden = false
+                secondHourslbl.isHidden = false
+                hoursLbl.text = "\(Wage.getHours(forWage: wage, forPrice: price))"
+            }
+        }
     }
+    
+    @IBAction func clearBtn(_ sender: Any) {
+        hoursLbl.isHidden = true
+        secondHourslbl.isHidden = true
+        hourtxt.text = ""
+        itemtxt.text = ""
+    }
+    
     
 }
 

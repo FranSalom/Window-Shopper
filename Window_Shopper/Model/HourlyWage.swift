@@ -9,7 +9,7 @@
 import Foundation
 
 class wage{
-    class func hourlyResult(forWage wage: Double, forPrice price:Double) -> Int {
+    class func getHours(forWage wage:Double, forPrice price:Double) -> Int {
         return Int(ceil(price/wage))
     }
 }

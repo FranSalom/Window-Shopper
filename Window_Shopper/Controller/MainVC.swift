@@ -12,6 +12,8 @@ class MainVC: UIViewController {
 
     @IBOutlet weak var hourtxt: TextFieldView!
     @IBOutlet weak var itemtxt: TextFieldView!
+    @IBOutlet weak var hoursLbl: UILabel!
+    @IBOutlet weak var secondHourslbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,15 +29,13 @@ class MainVC: UIViewController {
         
         hourtxt.inputAccessoryView = calcBtn
         itemtxt.inputAccessoryView = calcBtn
+        hoursLbl.isHidden = true
+        secondHourslbl.isHidden = true
     }
     
     @objc func calculateHours(){
-        var hour: String!
-    
-        hour = hourtxt.text
-        print(hour)
         
     }
-
+    
 }
 

@@ -27,7 +27,7 @@
                                     <constraint firstAttribute="height" constant="100" id="9cN-eV-8qd"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Cuanto ganas por hora?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5qD-9p-eqQ" customClass="TextFieldView" customModule="Window_Shopper" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Cuanto ganas al mes?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5qD-9p-eqQ" customClass="TextFieldView" customModule="Window_Shopper" customModuleProvider="target">
                                 <rect key="frame" x="60" y="168" width="255" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="QiF-rt-cdi"/>
@@ -54,8 +54,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSn-to-WUW">
-                                <rect key="frame" x="164.5" y="381" width="46" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSn-to-WUW">
+                                <rect key="frame" x="162.5" y="381" width="50.5" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="6cr-iJ-bXk"/>
                                 </constraints>
